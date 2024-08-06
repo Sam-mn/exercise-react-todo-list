@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  background-color: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #303134;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+.mainAddDiv {
+  height: calc(100vh - 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  align-self: self-start;
+  color: #fff;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.list {
+  max-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  list-style: none;
+  overflow: scroll;
+}
+
+.listItem {
+  width: 40%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.listItem span {
+  text-align: center;
+}
+
+.titleSpan {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nameSpan {
+  margin: 0.5rem 0;
+}
+
+.list div {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: red;
+}
+
+.deleteButton:hover {
+  background-color: red;
+}
+
+.completeButton {
+  background-color: green;
+}
+.completeButton:hover {
+  background-color: green;
+}
+
+.detailsButton {
+  background-color: #007bff;
+}
+.detailsButton:hover {
+  background-color: #007bff;
+}
+.editButton {
+  background-color: #007bff;
+}
+.editButton:hover {
+  background-color: #007bff;
+}
+
+.todo_container {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.todoButtonDiv,
+.todoListButtons {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.todoListButtons button {
+  background-color: #007bff;
+}
+
+.MoveDiv {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  span {
+    width: 20px;
+    cursor: pointer;
+  }
+}
+
+.noTodo {
+  color: #fff;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .list {
+    padding: 0;
+  }
+
+  .listItem {
+    width: 90%;
+  }
+
+  .todoButtonDiv,
+  .todoListButtons {
+    width: auto;
+  }
+  form {
+    width: 90%;
+  }
+}
