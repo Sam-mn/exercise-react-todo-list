@@ -91,6 +91,7 @@ const AddTodo = ({ edit, setEdit, id }: AddTodoProps) => {
           name="description"
           value={formData?.description}
           onChange={(e) => handleChange(e)}
+          rows={6}
           required
         />
         <button type="submit">{edit ? "Edit" : "Add"}</button>
